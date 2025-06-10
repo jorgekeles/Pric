@@ -1,0 +1,82 @@
+// _mixins.scss
+
+@use 'variables' as *;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint ==small {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==medium {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==large {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+
+.square {
+  width: 6px;
+  height: 6px;
+  background-color: $highlight-color;
+  display: inline-block;
+}
+
+.number {
+  font-family: 'Circular-black', sans-serif;
+  font-size: 20px;
+  color: #3E373B;
+  letter-spacing: -1px;
+  color: $main-color;
+}
+
+@mixin description {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+
+  .linea {
+    width: 200px;
+    background-color: white;
+    height: 1px;
+  }
+
+  p {
+    color: #ffffff;
+    font-family: 'Circular-book', sans-serif;
+    font-size: 14px;
+    margin: -1px;
+    text-align: right;
+    line-height: 1.25;
+
+
+
+    span {
+      font-family: 'Circular-bold', sans-serif;
+      color: #ffffff;
+      font-family: 'Circular-book', sans-serif;
+      font-size: 13px;
+
+    }
+  }
+
+  .number {
+    color: #ffffff;
+  }
+}

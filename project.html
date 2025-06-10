@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sass/main.css" />
+  <title>PRIC Construcciones</title>
+</head>
+<body class="detail-page-body">
+  <div id="header-placeholder"></div>
+
+  <main id="project-content">
+    <!-- Aquí se inyectará el contenido del proyecto desde render-project.js -->
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("nav a");
+    const currentUrl = window.location.pathname.split("/").pop(); // Ej: index.html
+
+    links.forEach(link => {
+      const linkHref = link.getAttribute("href");
+
+      if (linkHref === currentUrl || (currentUrl === "" && linkHref === "index.html")) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+  <script src="include-partials.js"></script>
+  <script src="js/render-project.js"></script> <!-- Asegurate que la ruta sea correcta -->
+<div id="lightbox-overlay" style="display: none;">
+  <button id="lightbox-prev" class="lightbox-arrow">
+    <img class="arrow" src="img/icons/arrow-white.svg" alt="Anterior" />
+  </button>
+  <img src="" class="gallery-img" alt="Imagen ampliada" />
+  <button id="lightbox-next" class="lightbox-arrow">
+    <img class="arrow" src="img/icons/arrow-white.svg" alt="Siguiente" />
+  </button>
+</div>
+</body>
+</html>

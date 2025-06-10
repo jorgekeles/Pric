@@ -1,0 +1,548 @@
+[
+    {
+        "id": "potrero",
+        "titulo": "Vivienda Potrero de Garay",
+        "categoria": "vivienda",
+        "obra": "Proyecto",
+        "ubicacion": "Potrero de Garay, Córdoba",
+        "estado": "finalizada",
+        "anio": "2023",
+        "superficie": "174,30m2 cubiertos, 63m2 semicubiertos",
+        "descripcion": "Descripción:\n Esta vivienda de vacaciones está diseñada para una familia multigeneracional, ofreciendo un espacio amplio y funcional para disfrutar de momentos en familia. La propiedad se desarrolla en planta baja, aprovechando la amplitud del terreno y las vistas al lago y la naturaleza.\n\nEspacio Social:\n\n- Espacio integrado de cocina, comedor y living, conectado con el espacio semicubierto, perfecto para compartir momentos en familia.\n- Amplia galería con asador, ideal para grandes reuniones familiares.\n- Espacio semicubierto en conexión con el amplio parque, perfecto para disfrutar del sol y la naturaleza.\n\nEspacio Privado:\n\n- Bloque de habitaciones separado del área social, con un pasillo de distribución que garantiza la privacidad y tranquilidad.\n- Habitación principal con baño privado, ubicada en un área más alejada de la social.\n- Tres habitaciones adicionales para cada núcleo familiar, compartiendo dos baños.\n\nDiseño y Materiales:\n\n- Combinación de bloques de diferentes alturas, creando una estética moderna y delicada.\n- Revestimiento plástico exterior en combinación de tonos oscuros y claros, variando con revestimiento simil piedra en la zona de ingreso.\n- Combinacion de materialidades, concertando mamposteria y estructura metálica para los espacios semicubiertos como garaje y galería.\n- Puerta ventana en zona social con apertura del 100% embutida en pared, para lograr la total conexión entre interior y exterior.\n\nFuncionalidad y Comodidad\n\n- Espacio de lavadero/guardado de bienes personales y tender, para garantizar un espacio funcional.\n- Baño social para invitados cerca del acceso, para mejor circulación durante el día.",
+        "portada": "img/portadas/vivienda-potrero de garay.jpg",
+        "imagenes": [
+            "img/detail/casa-potrero-img1.jpg",
+            "img/detail/casa-potrero-img2.jpg",
+            "img/detail/casa-potrero-img3.jpg",
+            "img/detail/casa-potrero-img4.jpg",
+            "img/detail/casa-potrero-img5.jpg",
+            "img/detail/casa-potrero-img6.jpg"
+        ]
+    },
+    {
+        "id": "duplex-arguello",
+        "titulo": "Duplex Argüello",
+        "categoria": "duplex",
+        "obra": "Proyecto",
+        "ubicacion": "Argüello, Córdoba",
+        "estado": "finalizada",
+        "anio": "2019",
+        "superficie": "94m2 cubiertos 9,6m2 semicubiertos ",
+        "descripcion": "Descripción:\n Esta vivienda unifamiliar es parte de un housing de 3 viviendas, diseñada para una familia que busca un espacio cómodo y funcional. La propiedad se desarrolla en dos plantas, aprovechando al máximo el espacio y ofreciendo una galería y patio propio.\n\nEspacio Social:\n- Espacio integrado de cocina, comedor y living, conectado con el espacio semicubierto, perfecto para compartir momentos en familia.\n- Galería con asador y bacha, ideal para reuniones familiares y disfrutar del aire libre.\n- Espacio semicubierto en conexión con el parque, perfecto para disfrutar del sol y la naturaleza.\n- Toilette para invitados en planta baja, evitando la circulación en planta alta a la hora de visitas.\n- Cocina equipada y pensada para aprovechar al máximo el espacio.\n\nEspacio Privado:\n- Bloque de habitaciones en planta alta, separado del área social, que garantiza la privacidad y tranquilidad.\n- 3 habitaciones, una con posibilidad de funcionar como espacio de homeoffice/escritorio, según la necesidad del cliente.\n- Antebaño separado para uso simultáneo con baño privado en planta alta.\n\nDiseño y Materiales:\n- Revestimiento plástico exterior en combinación de tonos oscuros y claros, que aporta un toque moderno y elegante.\n- Aleros en ventanas para el óptimo control solar y evitar el ingreso de agua de lluvias, permitiendo abrir las ventanas en días más refrescantes.",
+        "portada": "img/cards/duplex.jpg",
+        "imagenes": [
+            "img/detail/duplex-1.jpg",
+            "img/detail/duplex-2.jpg",
+            "img/detail/duplex-3.jpg",
+            "img/detail/duplex-4.jpg",
+            "img/detail/duplex-5.jpg",
+            "img/detail/duplex-6.jpg",
+            "img/detail/duplex-7.jpg",
+            "img/detail/duplex-8.jpg",
+            "img/detail/duplex-9.jpg"
+        ]
+    },
+    {
+        "id": "casa-puerto-del-aguila",
+        "titulo": "Casa unifamiliar puerto del Aguila",
+        "categoria": "vivienda",
+        "obra": "Proyecto",
+        "ubicacion": "Potrero de Garay, Córdoba",
+        "estado": "finalizada",
+        "anio": "2023",
+        "superficie": "174,30m2 cubiertos 63m2 semicubiertos",
+        "descripcion": "Descripción:\nEsta vivienda de vacaciones está diseñada para una familia multigeneracional, ofreciendo un espacio amplio y funcional para disfrutar de momentos en familia. La propiedad se desarrolla en planta baja, aprovechando la amplitud del terreno y las vistas al lago y la naturaleza.\n\nEspacio Social:\n- Espacio integrado de cocina, comedor y living, conectado con el espacio semicubierto, perfecto para compartir momentos en familia.\n- Amplia galería con asador, ideal para grandes reuniones familiares.\n- Espacio semicubierto cerca de la pileta, perfecto para disfrutar del sol y la naturaleza.\n\nEspacio Privado:\n- Bloque de habitaciones separado del área social, con un pasillo de distribución que garantiza la privacidad y tranquilidad.\n- Habitación principal con baño privado, ubicada en un área más alejada de la social.\n- Tres habitaciones adicionales para cada núcleo familiar, compartiendo dos baños.\n\nDiseño y Materiales:\n- Combinación de bloques de diferentes alturas, creando una estética moderna y delicada.\n- Revestimiento plástico exterior en tonos oscuros, combinado con revestimiento de madera y piedra.\n- Combinacion de materialidades, concertando mamposteria y estructura metálica para los espacios semicubiertos como garaje y galería.\n- Puerta ventana en zona social con apertura del 100% embutida en pared, para lograr la total conexión entre interior y exterior.\n\nFuncionalidad y Comodidad:\n- Espacio de lavadero/guardado de bienes personales y tender, para garantizar un espacio funcional.\n- Baño social para invitados cerca del acceso, para mejor circulación durante el día.",
+        "portada": "img/cards/vivienda-unifamiliar.jpg",
+        "imagenes": [
+            "img/detail/puerto-aguila-1.png",
+            "img/detail/puerto-aguila-2.png",
+            "img/detail/puerto-aguila-3.png",
+            "img/detail/puerto-aguila-4.png",
+            "img/detail/puerto-aguila-5.png",
+            "img/detail/puerto-aguila-6.png"
+        ]
+    },
+    {
+        "id": "casa-campo-cabalango",
+        "titulo": "Casa de campo Cabalango",
+        "categoria": "vivienda",
+        "obra": "Proyecto",
+        "ubicacion": "Cabalango, Córdoba",
+        "estado": "finalizada",
+        "anio": "2022",
+        "superficie": "85m2 cubiertos 10m2 semicubiertos",
+        "descripcion": "Puntos de partida diseño\nEsta cabaña de vacaciones/fines de semana está diseñada para una familia de 4 integrantes, ofreciendo un espacio acogedor y funcional para disfrutar de fines de semana y vacaciones en la naturaleza. Debido a su ubicación en las alturas se aprovecha planteando toda la superficie en Planta Baja, para mejor comodidad y accesibilidad sin perder las vistas a la montaña y naturaleza.\n\nPlanta Baja:\n- Espacio integrado de cocina, comedor y living, conectado con el espacio semicubierto, perfecto para compartir momentos en familia. Este espacio semicubierto funciona también como cochera de un vehiculo.\n- Toilette para invitados cerca del acceso para mejor accesibilidad durante el día.\n- Habitación principal y secundaria, con baño completo compartido. Este espacio se separa del área social mediante una puerta corrediza, dando la oportunidad de estar más relajados y tener un espacio más privado.\n- Living exterior en la cercanía de la galería, perfecta para relajarse y disfrutar de las vistas a las serranías de Córdoba.\n\nDiseño y Materiales:\n- Combinación de revestimiento plástico exterior, en dos colores, garantizando un bajo mantenimiento en el tiempo y una estética moderna.\n- Puertas ventanas y amplias creando visuales del lugar y permiten la entrada de luz natural. Teniendo en cuenta además ventilación cruzada de los espacios para mejor comportamiento térmico en veranos.\n- La cabaña está diseñada para aprovechar las vistas y la conexión con la naturaleza.",
+        "portada": "img/cards/casa-de-campo.jpg",
+        "imagenes": [
+            "img/detail/casa-campo-cabalango-1.webp",
+            "img/detail/casa-campo-cabalango-2.webp",
+            "img/detail/casa-campo-cabalango-3.webp",
+            "img/detail/casa-campo-cabalango-4.webp",
+            "img/detail/casa-campo-cabalango-5.webp",
+            "img/detail/casa-campo-cabalango-6.webp"
+        ]
+    },
+    {
+        "id": "sum-aeropuerto",
+        "titulo": "Sum para personal",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella, Córdoba",
+        "estado": "finalizada",
+        "anio": "2024",
+        "superficie": "140m2",
+        "descripcion": "Trabajos realizados:\n- Relevamiento.\n- Construcción de armadura y llenado de hormigón para la platea.\n- Construcción de estructura metálica conformada por columnas, cabreadas y clavaderas metálicas, con sus respectivos anclajes y tensores.\n- Techo de chapa con aislante, canaletas, cupertinas y zinguerías correspondientes.\n- Provisión e instalación de carpinterías de aluminio tipo moderna con vidrio tipo DVH.\n- Construcción de paredes exteriores con sistema Steel Frame con perfilería, lana de vidrio, placas de OSB, placa cementicia en exterior y placas de durlock en interior.\n- Construcción de tabiquería interior con durlock para configurar espacios de cocina y sanitarios.\n- Construcción de cielorraso de durlock tipo junta tomada con buña perimetral en interior y placa superboard en aleros y galerías.\n- Construcción de carpeta de nivelación y colocación de piso porcelanato 60x60 tanto en interior como en veredas y galería.\n- Proyecto y ejecución de instalación de tendido eléctrico, nuevo tablero seccional, instalación de luminaria nueva led y enchufes.\n- Ejecución de instalación de redes débiles, fichas tipo RJ45 en puestos de escritorio, pantallas de información de vuelos y cámaras de seguridad.\n- Provisión e instalación de box de baños, mobiliario fijo de melamina blanca como bajo mesada y barra en comedor.\n- Instalación nueva de agua para baños y cocina y vinculación acometida existente tanto de agua como de cloacas. Instalación de artefactos sanitarios, mesadas y accesorios de acero inoxidable.\n- Pintura de tabiquería y cielo raso interior nuevo con látex color blanco y exterior con revestimiento plástico grano fino en combinación de dos colores según proyecto.",
+        "portada": "img/cards/sum-aeropuerto.jpg",
+        "imagenes": [
+            "img/detail/sum-aeropuerto-1.jpg",
+            "img/detail/sum-aeropuerto-2.jpg",
+            "img/detail/sum-aeropuerto-3.jpg",
+            "img/detail/sum-aeropuerto-4.jpg",
+            "img/detail/sum-aeropuerto-5.jpg",
+            "img/detail/sum-aeropuerto-6.jpg",
+            "img/detail/sum-aeropuerto-7.jpg",
+            "img/detail/sum-aeropuerto-8.jpg",
+            "img/detail/sum-aeropuerto-9.jpg",
+            "img/detail/sum-aeropuerto-10.jpg",
+            "img/detail/sum-aeropuerto-11.jpg",
+            "img/detail/sum-aeropuerto-12.jpg",
+            "img/detail/sum-aeropuerto-13.jpg"
+        ]
+    },
+    {
+        "id": "remodelacion-sanitarios",
+        "titulo": "Remodelación naves sanitarios",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Refacción",
+        "ubicacion": "Aeropuerto de Villa Reynolds, San Luis",
+        "estado": "finalizada",
+        "anio": "2025",
+        "superficie": "25m2",
+        "descripcion": "Trabajos realizados\n\n- Retiro de revestimiento y solado existente.\n- Demolición de cielo raso existente.\n\n- Renovación de toda la instalación sanitaria, tanto de agua como de cloacas.\n\n- Revestimiento de paredes y piso con nuevo porcelanato 60x60, instalación de zócalos sanitarios de acero inoxidable.\n\n- Construcción de un nuevo cielorraso de durlock junta tomada.\n\n- Instalación de zócalos y barandas de acero inoxidable en exterior de los baños.\n\n- Modificación de instalación de tendido eléctrico para la instalación de luminaria nueva led en cielorraso.\n- Construcción e instalación de separadores de mingitorios con melamina gris.\n\n- Pintura de tabiquería y cielo raso nuevo con látex color según proyecto.\n- Instalación de nuevos artefactos sanitarios como inodoros, válvulas de descarga, bachas de acero inoxidable, mingitorios y griferías.\n\n- Instalación de accesorios como toalleros, secamanos, dispensador de jabón, porta rollo papel higiénico, basureros de acero inoxidable.\n\n- Construcción de mostrador principal, en estructura de chapa lisa pintada con colores según proyecto.\n- Instalación de bachas de granito gris mara e instalación de nuevos espejos.\n\nProvisión e instalación de cartelería en MDF laqueada y mampara de vidrio con su respectivo parante y baranda de acero inoxidable.",
+        "portada": "img/cards/sanitarios-reconquista.jpg",
+        "imagenes": [
+            "img/detail/sanitario-reconquista-1.jpeg",
+            "img/detail/sanitario-reconquista-2.jpg",
+            "img/detail/sanitario-reconquista-3.jpg",
+            "img/detail/sanitario-reconquista-4.jpg"
+        ]
+    },
+    {
+        "id": "atención-cliente",
+        "titulo": "Puesto atención al cliente",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella, Córdoba.",
+        "estado": "finalizada",
+        "anio": "2024",
+        "superficie": "25m2",
+        "descripcion": "Trabajos realizados\n\n- Construcción de paredes con perfilería metálicas y placas de durlock, instalación de una puerta de ingreso con su respectiva cerradura y picaporte.\n\n- Revestimiento de tabiquería en sector oficina con vidrios ploteados con vinilo color gris y microperforado en sector ventanas.\n\n- Instalación de zócalos de acero inoxidable en exterior y PVC blanco en interior.\n\n- Provisión e instalación de barandas de acero inoxidable.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, nuevo tablero seccional, instalación de luminaria nueva led y enchufes.\n\n- Ejecución de instalación de redes débiles, fichas tipo RJ45 en puestos de escritorio, pantallas de información de vuelos y cámaras de seguridad.\n- Construcción de luminarias tipo cajones con melamina gris y tiras LED, suspendidas en techo en modo decorativo en zona de atención al público.\n\n- Pintura de tabiquería y cielorraso nuevo con látex color según proyecto.\n\n- Provisión de mobiliario en melamina como escritorio en zona de guardia y mesada y lockers.\n\n- Provisión de mesadas en granito gris mara.\n\n- Construcción de mostrador principal, en estructura de chapa lisa pintada con colores según proyecto.\n\n- Instalación de cortinas, espejo, matafuegos y percheros.\n\n- Provisión e instalación de cartelería y señalética.",
+        "portada": "img/cards/atencion-cliente.jpg",
+        "imagenes": [
+            "img/detail/puesto-cliente-1.jpg",
+            "img/detail/puesto-cliente-2.jpg",
+            "img/detail/puesto-cliente-3.jpg",
+            "img/detail/puesto-cliente-4.jpg",
+            "img/detail/puesto-cliente-5.jpg"
+        ]
+    },
+    {
+        "id": "paniol",
+        "titulo": "Pañol de mantenimiento ",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto Coronel Felipe Varela, Catamarca.",
+        "estado": "finalizada",
+        "anio": "2024",
+        "superficie": "100m2",
+        "descripcion": "Trabajos realizados\n\n- Armado de proyecto, y replanteo\n\n- Construcción de paredes de mampostería con sus respectivas columnas y encadenados y vigas de hormigón armado.\n\n- Revoque grueso y fino tanto en interior como exterior.\n\n- Construcción de estructura metálica para techo \n\n- Instalación de nuevas carpinterías, ventanas con rejas, portón de chapa y puertas placas interiores.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, nueva tablero seccional, instalación de luminaria nueva led y enchufes monofásicos y trifásicos para maquinaria.\n\n- Ejecución de instalación de redes débiles, fichas tipo RJ45 en puestos de escritorio.\n\n- Construcción de una nueva estructura para cielorraso tipo junta tomada y desmontable 60x60.\n\n- Construcción de tabiquería de durlock para delimitación de nuevos espacios.\n\n- Provisión e instalación de piso porcelanato y cemento alisado pintado con epoxi en zona de taller.\n\n- Instalación cloacal y de agua sanitaria nueva para zona de baños y cocina. \n- Instalación de bomba cloacal a falta de pendiente con red existente.\n\n- Pintura de tabiquería y cielorraso nuevo con látex color según proyecto y revestimiento plástico en exterior.\n\n- Provisión e instalación de equipos tipo Split.\n\n- Provisión de mobiliario como mesadas, escritorios, estanterías, sillas, heladera, cocina, televisor, microondas y cortinas.",
+        "portada": "img/cards/panol-catamarca.jpg",
+        "imagenes": [
+            "img/detail/paniol-1.jpg",
+            "img/detail/paniol-2.jpg",
+            "img/detail/paniol-3.jpg",
+            "img/detail/paniol-4.jpg",
+            "img/detail/paniol-5.jpg",
+            "img/detail/paniol-6.jpg",
+            "img/detail/paniol-8.jpg",
+            "img/detail/paniol-9.jpg"
+        ]
+    },
+    {
+        "id": "oficina-administrativa",
+        "titulo": "Oficinas Administrativas",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Refacción",
+        "ubicacion": "Aeropuerto Coronel Felipe Varela, Catamarca.",
+        "estado": "finalizada",
+        "anio": "2023",
+        "superficie": "200m2",
+"descripcion": "Trabajos realizados\n\n- Demolición de mampostería, cielorrasos y tabiquerías de durlcok existentes.\n\n- Retiro de piso vinílico y parquet de madera existente.\n\n- Adaptación de red de incendio existente para la nueva configuración en cielorraso. Instalación de nuevos Sprinkler y detectores de incendio.\n\n- Instalación de nuevos equipos de aire acondicionado tipo Split con bombas de desagüe y su respectiva instalación eléctrica.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, nueva tablero seccional, instalación de luminaria nueva led y enchufes.\n\n- Ejecución de instalación de redes débiles, fichas tipo RJ45 en puestos de escritorio.\n\n- Construcción de una nueva estructura para cielorraso tipo junta tomada y desmontable 60x60.\n\n- Construcción de tabiquería nueva para delimitación de oficinas nuevas y revestimiento de paredes existentes con durlock.\n\n- Provisión e instalación de nuevo piso flotante de PVC con su respectiva carpeta de nivelación con masa niveladora.\n\n- Instalación de zócalos de PVC Blanco.\n\n- Provisión e instalación de empapelado en paredes con diseño según dirección de obra.\n\n- Revestimiento en paredes con Madera de melamina y perfilería de aluminio.\n\n- Construcción de cielorraso suspendido decorativo en zona de hall de ingreso con varillas WPC. \n\n- Instalación de divisorio de espacio tipo Uglass.\n\n- Instalación de vidrios fijos y puertas de vidrio templado de seguridad para configuración de nuevas oficinas, con sus respectivas perfilerías y tiradores.\n\n- Pintura de tabiquería y cielorraso nuevo con latex color según proyecto.\n\n- Provisión de mobiliario como escritorios, estanterías, sillas y cortinas.",
+        "portada": "img/cards/admin-aeropuerto-cba.jpg",
+        "imagenes": [
+            "img/detail/ofi-admin-1.jpeg",
+            "img/detail/ofi-admin-2.jpg",
+            "img/detail/ofi-admin-3.jpg",
+            "img/detail/ofi-admin-4.jpg"
+        ]
+    },
+    {
+        "id": "trabajo-desagues",
+        "titulo": "Desagües y canalización pluvial",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto Internacional de Formosa",
+        "estado": "Finalizada",
+        "anio": "2022",
+        "superficie": "400m2",
+"descripcion": "Trabajos realizados\n\n- Se realizó el movimiento de suelo, compactación del terreno con maquinaria, para encauzar el agua desde área operativa hacia canal existente.\n\n- Construcción de una alcantarilla enrejada para evitar ingreso de animales/personas a predio privado.\n\n- Provisión e Instalación de cañería de hormigón armado para canalizar el agua.",        "portada": "img/cards/desag-aerop-formosa-2.jpg",
+        "imagenes": [
+            "img/detail/desague-1.jpg",
+            "img/detail/desague-2.jpg",
+            "img/detail/desague-3.jpg",
+            "img/detail/desague-4.jpg",
+            "img/detail/desague-5.jpg"
+        ]
+    },
+    {
+        "id": "deposito-sullair",
+        "titulo": "Depósito de residuos y estacionamiento Sullair",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Planta de Sullair, San Luis",
+        "estado": "Finalizada",
+        "anio": "2024",
+        "superficie": "300m2",
+"descripcion": "Trabajos realizados\n\n- Retiro de manto verde y cavado de fundaciones con maquinaria.\n\n- Construcción de armaduras tipo zapatas puntuales y corridas para depósitos y armaduras cilíndricas para bases de tanques de incendio y abastecimiento.\n\n- Construcción de muros con bloque cemento con armaduras y hormigón en su interior y una doble piel de ladrillo visto con junta rasada.\n\n- Construcción e instalación e puertas tipo cortafuegos F90 y portones doble hoja de chapa para acceso de maquinaria.\n\n- Construcción de estructura de techo y cenefa lateral con estructura metálica, conformado por perfiles tipo IPN, tipo C , con sus respectivos tensores y rigidizadores. Instalación de zinguerias y cupertinas de cierre en chapa color institucional.\n\n- Terminación con chapa color, tanto en techo como en cenefas laterales, pintadas con color institucional.\n\n- Instalación de cartelería institucional.\n\n- Montaje de tanque de reserva de abastecimiento en planta (10m3) y reserva de incendio (50m3) , de 7,50m y 3,00 m de alto con medio de elevación correspondiente y anclaje tipo químico en bases antes resueltas.\n\n- Construcción de cemento alisado con herramienta tipo helicóptero para una perfecta terminación.\n\n- Pintura del interior con pintura tipo látex según colores institucionales e impermeabilizante del lado exterior en ladrillos vistos.\n\n- Construcción de cerco perimetral tipo olímpico en el predio.",        "portada": "img/cards/deposito-sanLuis.jpg",
+        "imagenes": [
+            "img/detail/sullair-1.jpeg",
+            "img/detail/sullair-2.jpg",
+            "img/detail/sullair-3.jpeg",
+            "img/detail/sullair-4.jpg",
+            "img/detail/sullair-5.jpg",
+            "img/detail/sullair-6.jpg",
+            "img/detail/sullair-7.jpg",
+            "img/detail/sullair-8.jpg"
+        ]
+    },
+    {
+        "id": "depositos-pirotecnia",
+        "titulo": "Depósitos de pirotecnia",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional",
+    "ubicacion": "Aeropuerto Tucumán, Rio Cuarto, Córdoba, Santiago del Estero, Mendoza, La Rioja, Salta",
+        "estado": "Finalizadas",
+        "anio": "2022-2024",
+        "superficie": "12 m2",
+"descripcion": "Descripción:\nEl cliente nos encomendó un depósito para almacenamiento de Pirotecnia para el control aviario dentro de Aeropuertos, para cumplir con la normativa vigente.\n\nPara este trabajo se tuvieron en cuenta tareas como:\n\n- Construcción de mampostería de ladrillo macizo de 30 cm.\n- Revoque de ambas caras con grueso y fino y pintadas con pintura epoxi color según el proyecto.\n- Construcción de columnas y vigas de hormigón armado.\n\n- Construcción de estructura metálica en techo, con perfiles tipo C y chapa acanalada zincada o policarbonato, según proyecto.\n- Construcción de una platea de hormigón de 15 cm de espesor, la misma fue pintada con pintura epoxi, para mejor mantenimiento y limpieza.\n- Se proveyeron e instalaron las aberturas (puertas y ventanas).\n- Se proveyeron e instalaron estanterías, luz con panel solar y fotocélula, matafuegos, baldes de arena y cartelería de señalización.",        "portada": "img/cards/depoito-pirotecnia.jpg",
+        "imagenes": [
+            "img/detail/pirotecnia-1.jpg",
+            "img/detail/pirotecnia-2.jpg",
+            "img/detail/pirotecnia-3.jpg",
+            "img/detail/pirotecnia-4.jpg",
+            "img/detail/pirotecnia-5.jpg"
+        ]
+    },
+    {
+        "id": "corte-iluminacion",
+        "titulo": "Corte de torre de iluminación",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Refacción",
+        "ubicacion": "Aeropuerto Internacional Teniente Benjamin Matienzo, Tucumán",
+        "estado": "",
+        "anio": "2022",
+        "superficie": "200m2",
+"descripcion": "Descripción\nLa pasarela telescópica del aeropuerto de TUC, poseía en el pórtico que sostenía al puente fijo, una torre de iluminación con una plataforma de acceso, que estaba a una altura 15 m, del nivel de plataforma. Luego de la ampliación de pista, el elemento antes mencionado, pasó a implicar un obstáculo VISUAL para el operador de torre de control de pista de aterrizaje.\n\nObjetivos y logros del trabajo:\nSe eliminó el obstáculo descripto anteriormente, realizando un corte con oxicorte en cada columna IPN del pórtico, a una altura 9.00 m del nivel de plataforma utilizando todas las medidas de protección de personal, y utilizando medios de elevación correspondientes.\n\nComo tareas complementarias y no perjudicar los niveles de iluminación en pista, se instalaron proyectores sobre la fachada del edificio terminal.\n\nPara este trabajo se tuvieron en cuenta tareas como:\n- Se delimitó la zona en pista de obra sobre el sector a intervenir con conos y new jersey.\n- Se realizaron los cortes programados en las columnas del pórtico.\n- Se realizaron trabajos de pintura y terminación final.\n- Disposición final de los elementos retirados.",        "portada": "img/cards/corte-torre.jpg",
+        "imagenes": [
+            "img/detail/torre-iluminacion-1.jpeg",
+            "img/detail/torre-iluminacion-2.jpeg",
+            "img/detail/torre-iluminacion-3.jpeg",
+            "img/detail/torre-iluminacion-4.jpeg",
+            "img/detail/torre-iluminacion-5.jpeg",
+            "img/detail/torre-iluminacion-6.jpeg",
+            "img/detail/torre-iluminacion-7.jpeg",
+            "img/detail/torre-iluminacion-8.jpeg",
+            "img/detail/torre-iluminacion-9.jpeg",
+            "img/detail/torre-iluminacion-10.jpeg",
+            "img/detail/torre-iluminacion-11.jpeg"
+        ]
+    },
+    {
+        "id": "cercos-perimetrales",
+        "titulo": "Cercos perimetrales de seguridad",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto Internacional Ástor Piazzolla, Mar del plata, Buenos Aires",
+        "estado": "Finalizadas",
+        "anio": "2024-2025",
+"descripcion": "Descripción\nSe encomendó a nuestra empresa la instalación de cercos perimetrales de seguridad para la delimitación de predios en diferentes localidades, los cuales hemos resuelto con dos tipos de cercos, según la necesidad del cliente.\n\n- Cercos tipo Olímpicos: Con murete de hormigón armado, tejido romboidal, tensores, torniquetas y sistema de tensado. Además, podemos agregar alambre de púa o concertina para mayor seguridad y sistema antivandálico con planchuelas galvanizadas.\n\n- Cercos Rurales: Con postes de madera u hormigón, varillas e hilos de alambre liso o de púa.\n\nCon este tipo de trabajo garantizamos una rápida y eficiente instalación de varios metros lineales, garantizando calidad y experiencia por parte de nuestra empresa, garantizando mayor seguridad y protección para los predios, y mejorando la delimitación clara y precisa del terreno de nuestros clientes.",       
+"portada": "img/cards/cerco-perimetral.jpg",
+        "imagenes": [
+            "img/detail/cerco-1.jpg",
+            "img/detail/cerco-2.jpg",
+            "img/detail/cerco-3.jpg",
+            "img/detail/cerco-5.jpg",
+            "img/detail/cerco-6.jpg",
+            "img/detail/cerco-7.jpg",
+            "img/detail/cerco-8.jpg"
+          
+        ]
+    },
+    {
+        "id": "coworking-vibra",
+        "titulo": "Coworking Vibra",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Remodelacion",
+        "ubicacion": "Villa Maria, Córdoba",
+        "estado": "Finalizada",
+        "anio": "2023",
+"superficie": "70m2",
+         "descripcion": "Trabajos realizados:\n\n- Demolición de mampostería, pisos, retiro de carpinterías y demolición de veredas.\n\n- Retiro de revestimiento de piedra en fachada.\n- Construcción de tabiquerías de durlock y cielorraso junta tomada nuevo.\n\n- Construcción de nuevo pórtico de fachada con estructura y placas Superboard.\n- Construcción de carpeta cementicia de nivelación e instalación de nuevo piso porcelanato.\n\n- Provisión e instalación de nuevas carpinterías de aluminio.\n- Proyecto y ejecución de instalación de tendido eléctrico, tablero seccional para red normal y de emergencia, instalación de luminaria nueva led.\n\n- Nueva instalación de agua y cloacas para cocina y consultorios.\n\n- Instalación de detectores de humo y señalización de evacuación.\n- Instalación de parlantes en cielorraso.\n- Provisión e instalación de mobiliario.\n- Pintura de tabiquería, cielorraso y aberturas de madera existentes.\n\n- Aplicación de revestimiento plástico y microcemento en fachada.\n\n- Provisión e instalación de nueva cartelería LED.\n\n- Reparación y puesta en valor de piso parquet de madera existente.\n\n- Instalación de aires acondicionado tipo Split.",
+        "portada": "img/cards/vibra-coworking.jpg",
+        "imagenes": [
+            "img/detail/vibra-1.jpeg",
+            "img/detail/vibra-2.jpg",
+            "img/detail/vibra-3.jpeg",
+            "img/detail/vibra-4.jpg",
+            "img/detail/vibra-5.jpeg",
+            "img/detail/vibra-6.jpg",
+            "img/detail/vibra-7.jpeg",
+            "img/detail/vibra-8.jpg",
+            "img/detail/vibra-9.jpeg",
+            "img/detail/vibra-10.jpg",
+            "img/detail/vibra-11.jpeg",
+            "img/detail/vibra-12.jpg",
+            "img/detail/vibra-13.jpg",
+            "img/detail/vibra-14.jpeg",
+            "img/detail/vibra-15.jpg",
+            "img/detail/vibra-16.jpeg"
+        ]
+    },
+    {
+        "id": "shop-gallery-neuquen",
+        "titulo": "Shop Gallery Neuquén",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Nueva",
+        "ubicacion": "Aeropuerto Internacional Juan Domingo Perón, Neuquén",
+        "estado": "Finalizada",
+        "anio": "2019",
+"superficie": "80m2",
+       "descripcion": "Trabajos realizados:\n\n- Construcción de tabiquería de durlock y cielorraso junta tomada nuevo.\n- Construcción de carpeta cementicia de nivelación e instalación de nuevo piso porcelanatto.\n- Proyecto y ejecución de instalación de tendido eléctrico, tablero seccional para red normal y de emergencia, instalación de luminaria nueva led.\n\n- Provisión e instalación de ploteo vinílico esmerilado en vidriera.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de nueva cartelería LED.\n\n- Instalación de rack y red estabilizada y CCTV.",
+        "portada": "img/portadas/shop-gallery-nqn.jpg",
+        "imagenes": [
+            "img/detail/s-gallery-nqn-1.jpg",
+            "img/detail/s-gallery-nqn-2.jpg",
+            "img/detail/s-gallery-nqn-3.jpg",
+            "img/detail/s-gallery-nqn-4.jpg",
+            "img/detail/s-gallery-nqn-5.jpg",
+            "img/detail/s-gallery-nqn-6.jpg",
+            "img/detail/s-gallery-nqn-7.jpg",
+            "img/detail/s-gallery-nqn-8.jpg",
+            "img/detail/s-gallery-nqn-9.jpg"
+        ]
+    },
+    {
+        "id": "shop-gallery-iguazu",
+        "titulo": "Shop Gallery Iguazú",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Nueva",
+        "ubicacion": "Aeropuerto Internacional Cataratas del Iguazú, Misiones",
+        "estado": "Finalizada",
+        "anio": "2019",
+"superficie": "242m2",
+"descripcion": "Trabajos realizados:\n\n- Construcción de tabiquería de durlock y cielorraso junta tomada nuevo.\n- Construcción de carpeta cementicia de nivelación e instalación de nuevo piso porcelanatto.\n- Proyecto y ejecución de instalación de tendido eléctrico, tablero seccional para red normal y de emergencia, instalación de luminaria nueva led.\n\n- Provisión e instalación de vidriera nueva.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de nueva cartelería LED.\n\n- Instalación de BackLight.\n\n- Instalación de nuevas bocas de retorno y ventilación de aire acondicionado central (termomecánica).\n\n- Instalación de rack y red estabilizada y CCTV.\n\n- Instalación de cortina metálica corrediza nueva con rieles superiores.",        "portada": "img/cards/shop-gallery-iguazu.jpg",
+        "imagenes": [
+            "img/detail/s-gallery-igz-1.jpg",
+            "img/detail/s-gallery-igz-2.jpg",
+            "img/detail/s-gallery-igz-3.jpg",
+            "img/detail/s-gallery-igz-4.jpg",
+            "img/detail/s-gallery-igz-5.jpg",
+            "img/detail/s-gallery-igz-6.jpg"
+        ]
+    },
+    {
+        "id": "shop-gallery-bariloche",
+        "titulo": "Shop Gallery Bariloche",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Remodelación",
+        "ubicacion": "Aeropuerto Teniente Luis Candelaria, Bariloche",
+        "estado": "Finalizada",
+        "anio": "2023",
+"superficie": "92m2",
+"descripcion": "Trabajos realizados:\n\n- Demolición de cielorraso existente.\n- Retiro de piso cerámico existente.\n- Construcción de tabiquería de durlock y cielorraso junta tomada nuevo.\n\n- Construcción de carpeta cementicio e instalación de nuevo piso porcelanatto.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, tablero seccional para red normal y de emergencia, instalación de luminaria nueva led.\n\n- Provisión e instalación de vidriera nueva.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de nueva cartelería LED.\n\n- Instalación de BackLight.\n\n- Instalación de nuevas bocas de retorno y ventilación de aire acondicionado central (termomecanica).\n\n- Instalación de red de incendio de extinción en cielorraso.\n\n- Instalación de parlantes en cielorraso.\n\n- Instalación de rack y red estabilizada y CCTV.\n\n- Retiro de cortina e instalación de cortina metálica levadiza nueva con motor.",        "portada": "img/cards/shop-gallery-bariloche.jpg",
+        "imagenes": [
+            "img/detail/s-gallery-barilo-1.jpg",
+            "img/detail/s-gallery-barilo-2.jpg",
+            "img/detail/s-gallery-barilo-3.jpg",
+            "img/detail/s-gallery-barilo-4.jpg",
+            "img/detail/s-gallery-barilo-5.jpg",
+            "img/detail/s-gallery-barilo-6.jpg",
+            "img/detail/s-gallery-barilo-7.jpg",
+            "img/detail/s-gallery-barilo-8.jpg"
+        ]
+    },
+    {
+        "id": "librería-yenny",
+        "titulo": "Librería Yenny",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Remodelación",
+        "ubicacion": "Nuevo Centro Shopping, Córdoba",
+        "estado": "Finalizada",
+        "anio": "2023",
+"superficie": "97m2",
+"descripcion": "Trabajos realizados:\n\n- Demolición de cielorraso existente.\n- Retiro de piso vinílico existente.\n- Construcción de tabiquería de durlock y cielorraso junta tomada nuevo.\n\n- Construcción de carpeta con masa niveladora e instalación de nuevo piso flotante vinílico tipo click y vinílico en rollo.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, tablero seccional para red normal y de emergencia, instalación de luminaria nueva led.\n\n- Provisión e instalación de vidriera nueva.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de revestimiento plástico en paredes interiores.",        "portada": "img/cards/yenni-nuevocentro.jpg",
+        "imagenes": [
+            "img/detail/yenni-1.jpg",
+            "img/detail/yenni-2.jpg",
+            "img/detail/yenni-3.jpg",
+            "img/detail/yenni-4.jpg",
+            "img/detail/yenni-5.jpg",
+            "img/detail/yenni-6.jpg",
+            "img/detail/yenni-7.jpg",
+            "img/detail/yenni-8.jpg"
+        ]
+    },
+    {
+        "id": "bar-kandahar",
+        "titulo": "Bar Kandahar",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Nueva",
+        "ubicacion": "Aeropuerto Teniente Luis Candelaria, Bariloche",
+        "estado": "Finalizada",
+        "anio": "2021",
+        "superficie": "110m2",
+"descripcion": "Trabajos realizados:\n\n- Instalación de cielorraso con malla microperforada metálica en casetones de hormigón.\n- Construcción de tabiquería de durlock y cielorraso junta tomada en zona cocina.\n\n- Instalación de revestimiento de madera en tabiquería.\n\n- Construcción de carpeta niveladora e instalación de nuevo porcelanatto interior.\n\n- Instalación de revestimiento en zona cocina.\n- Modificación de red sanitaria (agua y cloaca) para una nuevas bachas en sector kitchenette.\n- Proyecto y ejecución de instalación de tendido eléctrico trifásico para artefactos de cocina, tablero seccional, instalación de luminaria nueva led.\n\n- Instalación de campana extractora.\n\n- Instalación de zócalos de aluminio negro y acero inoxible en fachada.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de revestimiento plástico en paredes interiores.",        "portada": "img/cards/kandahar-bariloche.jpg",
+        "imagenes": [
+            "img/detail/kandahar-1.jpg",
+            "img/detail/kandahar-2.jpg",
+            "img/detail/kandahar-3.jpg",
+            "img/detail/kandahar-4.jpg",
+            "img/detail/kandahar-5.jpg",
+            "img/detail/kandahar-6.jpg",
+            "img/detail/kandahar-7.jpg"
+        ]
+    },
+    {
+        "id": "gate-7-24-iguazu",
+        "titulo": "Gate 7-24 Iguazú",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Nueva",
+        "ubicacion": "Aeropuerto Internacional Cataratas del Iguazú, Misiones",
+        "estado": "Finalizada",
+        "anio": "2019",
+        "superficie": "70m2",
+"descripcion": "Trabajos realizados:\n\n- Construcción de tabiquería de durlock y cielorraso junta tomada y desmontable nueva.\n\n- Construcción de carpeta de nivelación e instalación de nuevo porcelanatto interior.\n\n- Proyecto y ejecución de instalación de tendido eléctrico y tablero seccional, instalación de luminaria nueva led.\n- Instalación de nueva cartelería LED.\n\n- Instalación de zócalos de acero inoxidable en fachada.\n- Pintura de tabiquería y cielorraso.",        "portada": "img/cards/gate724-iguazu.jpg",
+        "imagenes": [
+            "img/detail/gate-1.jpg",
+            "img/detail/gate-2.jpg",
+            "img/detail/gate-3.jpg",
+            "img/detail/gate-4.jpg",
+            "img/detail/gate-5.jpg",
+            "img/detail/gate-6.jpg",
+            "img/detail/gate-7.jpg",
+            "img/detail/gate-8.jpg",
+            "img/detail/gate-9.jpg",
+            "img/detail/gate-10.jpg",
+            "img/detail/gate-11.jpg"
+        ]
+    },
+    {
+        "id": "farmacias-red",
+        "titulo": "Farmacias Red",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Refacción",
+        "ubicacion": "Villa Allende , Córdoba",
+        "estado": "Finalizada",
+        "anio": "2021",
+        "superficie": "130m2",
+ "descripcion": "Trabajos realizados:\n\n- Demolición de cielorraso existente.\n- Demolición de solados interiores y de veredas existentes.\n- Construcción de tabiquería de durlock y cielorraso junta tomada y desmontable nueva.\n\n- Modificación y pintura de carpinterías existentes.\n\n- Instalación de nuevo porcelanatto interior y baldosa en vereda.\n\n- Instalación de nuevos artefactos sanitarios, espejos y accesorios.\n- Modificación de red sanitaria (agua y cloaca) para una nueva bacha en sector laboratorio.\n\n- Impermeabilización de techo de losa.\n- Pintura de tabiquería y cielorraso.\n\n- Instalación de revestimiento plástico en fachada.",        "portada": "img/cards/red-villa-allende.jpg",
+        "imagenes": [
+            "img/detail/f-red-1.jpg",
+            "img/detail/f-red-2.webp",
+            "img/detail/f-red-3.webp",
+            "img/detail/f-red-4.webp",
+            "img/detail/f-red-5.webp",
+            "img/detail/f-red-6.webp"
+        ]
+    },
+    {
+        "id": "dutty-free",
+        "titulo": "Dutty Free",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Refacción",
+        "ubicacion": "Aeropuerto Teniente Luis Candelaria, Bariloche",
+        "estado": "Finalizada",
+        "anio": "2022",
+        "superficie": "158m2",
+"descripcion": "Trabajos realizados:\n\n- Demolición de cielorraso existente.\n- Construcción de tabiquería de durlock y cielorraso junta tomada nueva.\n\n- Instalación de carpinterías nuevas.\n\n- Construcción e instalación de una nueva escalera caracol.\n\n- Proyecto y ejecución de instalación de tendido eléctrico y tablero seccional, instalación de luminaria nueva led.\n\n- Provisión e instalación de cartelería led.\n- Pintura de tabiquería y cielorraso.\n\n- Modificación y arreglo de mobiliario existente.\n\n- Modificación de red de incendio existente, agregar sprinkler y extender la red.",        "portada": "img/cards/duty-free-bariloche.jpg",
+        "imagenes": [
+            "img/detail/dutty-1.jpeg",
+            "img/detail/dutty-2.jpg",
+            "img/detail/dutty-3.jpeg",
+            "img/detail/dutty-4.jpeg",
+            "img/detail/dutty-5.jpeg",
+            "img/detail/dutty-6.jpeg",
+            "img/detail/dutty-7.jpeg",
+            "img/detail/dutty-8.jpeg",
+            "img/detail/dutty-9.jpeg"
+        ]
+    },
+    {
+        "id": "bar-tostado",
+        "titulo": "Bar Tostado",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Refacción",
+        "ubicacion": "Aeropuerto Ing. Ambrosio Taravella , Córdoba",
+        "estado": "Finalizada",
+        "anio": "2025",
+        "superficie": "140m2",
+ "descripcion": "Trabajos realizados:\n\n- Retiro de pisos flotantes existentes.\n- Construcción de carpeta de nivelación con masa niveladora.\n- Instalación de nuevo piso vinílico.\n- Reparación de muros interiores.\n- Instalación de mobiliario.\n- Pintura de tabiquería.",        "portada": "img/cards/tostado-cordoba.jpg",
+        "imagenes": [
+            "img/detail/tostado-1.jpeg",
+            "img/detail/tostado-2.jpeg",
+            "img/detail/tostado-3.jpeg",
+            "img/detail/tostado-4.jpeg",
+            "img/detail/tostado-5.jpeg",
+            "img/detail/tostado-6.jpeg",
+            "img/detail/tostado-7.jpeg",
+            "img/detail/tostado-8.jpeg"
+        ]
+    },
+    {
+        "id": "assist-card",
+        "titulo": "Assit Card",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Nueva",
+        "ubicacion": "Aeropuerto Ing. Ambrosio Taravella , Córdoba",
+        "estado": "Finalizada",
+        "anio": "2024",
+        "superficie": "12m2",
+ "descripcion": "Trabajos realizados:\n\n- Construcción de un sistema prefabricado en taller de panelería con estructura metálica y revestimiento de madera laqueada con sistema de instalación tipo percha, para optimizar tiempos de armado in situ.\n- Provisión e instalación de paños fijos de vidrio y ploteado esmerilado en los mismos.\n\n- Instalación de puerta revestida con melamina con su respectivo picaporte y cerradura.\n\n- Proyecto y ejecución de instalación de tendido eléctrico, instalación de luminarias colgadas en bandejas y nuevo tablero eléctrico.\n\n- Ejecución de instalación de redes débiles, fichas tipo RJ45 e instalación de Rack.\n\n- Instalación de pantalla en fachada.\n\n- Provisión e instalación de cartelería corpórea de acrílico con luz LED.\n\n- Provisión e instalación de zócalos y barandas de acero inoxidable.\n- Provisión de mobiliario en sector Back Office en melamina , provisión de heladera y microondas.\n\n- Construcción de mostrador con madera laqueada según colores institucionales con vidrio superior de vidrio templado 10mm.",        "portada": "img/cards/assist-card-cba.jpg",
+        "imagenes": [
+            "img/detail/assist-card-1.jpeg",
+            "img/detail/assist-card-2.jpg",
+            "img/detail/assist-card-3.jpeg",
+            "img/detail/assist-card-4.jpg",
+            "img/detail/assist-card-5.jpg"
+        ]
+    },
+    {
+        "id": "andrea-nahas",
+        "titulo": "Andrea Nahas",
+        "categoria": "civil comercial",
+        "obra": "Civil Comercial Refacción",
+        "ubicacion": "Shopping Villa Cabrera, Córdoba",
+        "estado": "Finalizada",
+        "anio": "2022",
+        "superficie": "150m2",
+  "descripcion": "Trabajos realizados:\n\n- Demolición de muros y tabiquerías existentes.\n- Construcción de carpeta de nivelación.\n- Instalación de porcelanato en solado.\n- Construcción de tabiquería de durlock y cielorraso junta tomada nueva.\n\n- Instalación de carpinterías nuevas.\n\n- Instalación nuevas de agua y cloaca para kitchenette y baños.\n\n- Proyecto y ejecución de instalación de tendido eléctrico y tablero.\n\n- Instalación de cartelería.\n- Pintura de tabiquería y cielorraso.",
+        "portada": "img/portadas/andrea nahas.jpg",
+        "imagenes": [
+            "img/detail/andrea-nahas-1.jpg",
+            "img/detail/andrea-nahas-2.jpg",
+            "img/detail/andrea-nahas-3.jpg",
+            "img/detail/andrea-nahas-4.jpg",
+            "img/detail/andrea-nahas-5.jpg"
+        ]
+    }
+]
