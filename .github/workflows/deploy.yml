@@ -1,0 +1,27 @@
+name: 🚀 Deploy Static Website to Hostinger via FTP
+
+on:
+  push:
+    branches:
+      - main  # Cambiá si usás otra rama
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Deploy to Hostinger using FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}  # por defecto 21
+        protocol: ftp
+        local-dir: ./
+        server-dir: ./public_html/     # cambialo si tu Hostinger usa otra carpeta
+        dangerous-clean-slate: true    # borra archivos viejos en cada deploy
+
