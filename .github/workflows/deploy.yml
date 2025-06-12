@@ -3,7 +3,7 @@ name: 🚀 Deploy Static Website to Hostinger via FTP
 on:
   push:
     branches:
-      - main  # Cambiá si usás otra rama
+      - main  
 
 jobs:
   deploy:
@@ -22,6 +22,6 @@ jobs:
         port: ${{ secrets.FTP_PORT }}  # por defecto 21
         protocol: ftp
         local-dir: ./
-        server-dir: ./public_html/     # cambialo si tu Hostinger usa otra carpeta
-        dangerous-clean-slate: true    # borra archivos viejos en cada deploy
+        server-dir: ./public_html/     
+        dangerous-clean-slate: true    
 
