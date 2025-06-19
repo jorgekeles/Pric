@@ -22,4 +22,5 @@ jobs:
         REMOTE_PORT: 65002
         SOURCE: "./"
         TARGET: "public_html/"
+        ARGS: "--delete"
 
