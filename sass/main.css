@@ -1045,6 +1045,56 @@ body a {
 #project-content .project-nav .nav-button {
   align-items: center;
 }
+#project-content .project-nav .nav-button.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #999595;
+  font-family: "Circular-book", sans-serif;
+  font-size: 18px;
+  gap: 0.5rem;
+  position: relative;
+  background: none;
+  border: none;
+  flex-direction: column;
+  font-family: "Circular-bold", sans-serif;
+}
+#project-content .project-nav .nav-button.all .arrow-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), visibility 0.4s ease;
+}
+#project-content .project-nav .nav-button.all .arrow-circle img {
+  width: 100%;
+  height: auto;
+  transform: rotate(0deg);
+}
+#project-content .project-nav .nav-button.all:hover {
+  color: #3E373B;
+}
+#project-content .project-nav .nav-button.all:hover .arrow-circle {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  #project-content .project-nav .nav-button.all {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #project-content .project-nav .nav-button.all {
+    display: none;
+  }
+}
 #project-content .project-nav .nav-button.prev {
   display: flex;
   align-items: center;

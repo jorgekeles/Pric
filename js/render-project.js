@@ -38,33 +38,34 @@ document.addEventListener("DOMContentLoaded", () => {
       }).join("")}
   </div>
 `;
-      const navButtonsHTML = `
+const navButtonsHTML = `
   <div class="project-nav">
     ${anterior ? `
       <a href="project.html?id=${anterior.id}" class="nav-button prev">
-      <span class="arrow-circle">
-        <img src="img/icons/arrow.svg" alt="anterior" />
-      </span>
-      
+        <span class="arrow-circle">
+          <img src="img/icons/arrow.svg" alt="anterior" />
+        </span>
         anterior
-                              <span class="square"></span>
-
       </a>` : ""
-        }
+    }
+
+    <a href="works.html" class="nav-button all">
+     
+      todos los trabajos
+   
+    </a>
 
     ${siguiente ? `
       <a href="project.html?id=${siguiente.id}" class="nav-button next">
-                      <span class="square"></span>
-
-      siguiente
-      <span class="arrow-circle">
-        <img src="img/icons/arrow.svg" alt="siguiente" />
-      </span>
-        
+        siguiente
+        <span class="arrow-circle">
+          <img src="img/icons/arrow.svg" alt="siguiente" />
+        </span>
       </a>` : ""
-        }
+    }
   </div>
 `;
+
 
 
       main.innerHTML = `
