@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}  # por defecto 21
-        protocol: sftp
+        protocol: ftps
         local-dir: ./
         server-dir: ./public_html/     
         dangerous-clean-slate: true    
