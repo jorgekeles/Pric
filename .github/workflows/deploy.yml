@@ -13,15 +13,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Deploy to Hostinger using FTP
+    - name: 📦 Deploy via SFTP
       uses: pressidium/lftp-deploy-action@v1.0.2
       with:
-        server: ${{ secrets.FTP_HOST }}
+        host: ${{ secrets.FTP_HOST }}          # Ej: ftp.tusitio.com
+        port: 65002                            # Tu puerto SFTP personalizado
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        port: ${{ secrets.FTP_PORT }}  # por defecto 21
-        protocol: ftps
-        local-dir: ./
-        server-dir: ./public_html/     
-        dangerous-clean-slate: true    
+        sftp: true                             # Clave para usar SFTP
+        localDir: ./                     # Cambialo si tu contenido está en otro lugar
+        remoteDir: /public_html/               # Ruta de destino en tu Hostinger
 
