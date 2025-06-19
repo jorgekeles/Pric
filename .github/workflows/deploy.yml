@@ -16,12 +16,10 @@ jobs:
     - name: 📦 Deploy via SFTP
       uses: easingthemes/ssh-deploy@v2.1.5
       with:
-        host: ${{ secrets.FTP_HOST }}          # Ej: ftp.tusitio.com
-        port: 65002                            # Tu puerto SFTP personalizado
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        sftp: true                             # Clave para usar SFTP
-        localDir: ./                     # Cambialo si tu contenido está en otro lugar
-        remoteDir: /public_html/               # Ruta de destino en tu Hostinger
+        REMOTE_HOST: ${{ secrets.FTP_HOST }}
+        REMOTE_USER: ${{ secrets.FTP_USERNAME }}
+        REMOTE_PORT: 65002
+        SOURCE: "./"
+        TARGET: "/public_html/"
 
