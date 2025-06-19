@@ -1,37 +1,10 @@
 // main.scss
 @use 'variables' as *;
 @use 'mixin';
+@use 'fonts';
 
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "Circular-black";
-  src: url("../fonts/CircularStd-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Circular-bold";
-  src: url("../fonts/CircularStd-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Circular-book";
-  src: url("../fonts/CircularStd-Book.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Circular-medium";
-  src: url("../fonts/CircularStd-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
 }
 
 .section-header {
@@ -39,31 +12,61 @@ html {
 }
 
 .description {
-  @include mixin.description
+  @include mixin.description;
 }
 
+.arrow-button {
+  @include mixin.arrow-button;
+}
+
+
 body {
-  background-color: $bkg-color;
-  font-family: 'Circular-book', sans-serif;
-  font-size: 18px;
+
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   color: $secondary-color;
+  background-color: $bkg-color;
   margin: 0;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+  }
+
+
 
   h1 {
-    font-family: 'Circular-black', sans-serif;
+
     color: $light-color;
-    font-size: 100px;
-    line-height: 80px;
+    font-family: $font-heading;
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    letter-spacing: $letter-spacing-base;
+
+
+    @media (max-width: 768px) {
+      font-size: $font-size-h1-mobile;
+      line-height: $line-height-h1-mobile;
+    }
 
   }
 
   h2 {
-    font-family: 'Circular-black', sans-serif;
+
+
+    font-family: $font-heading;
+    font-size: $font-size-h2;
+    letter-spacing: $letter-spacing-h2;
     color: $main-color;
-    font-size: 80px;
-    letter-spacing: -4px;
     margin: -32px 0 0 0;
     padding: 0;
+
+    @media (max-width: 768px) {
+      font-size: $font-size-h2-mobile;
+      margin: -22px 0 0 0;
+    }
   }
 
   p,
@@ -93,13 +96,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem;
+  height: $header-height-desktop;
+      padding: 0 2rem;
+
+    @media (max-width: 768px) {
+height: $header-height-mobile;
+    padding: 0 1rem;
+    }
 
     .nav-left,
     .nav-right {
       display: flex;
       gap: 1.5rem;
       padding: 0;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
 
       li {
         list-style: none;
@@ -108,8 +121,12 @@ body {
           text-decoration: none;
           color: $secondary-color;
           font-family: 'Circular-book', sans-serif;
-          font-size: 14px;
+          font-size: 15px;
           letter-spacing: -0.5px;
+
+          @media (max-width: 768px) {
+            font-size: $font-size-base-mobile;
+          }
 
           &.active {
             color: $main-color;
@@ -126,139 +143,208 @@ body {
 
       img {
         width: 100px;
+
+        @media (max-width: 768px) {
+          width: 70px;
+        }
+
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: $secondary-color;
+      z-index: 101;
+
+      @include mixin.respond-to(small) {
+        display: block;
+      }
+    }
+
+    .nav-mobile {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 46px;
+      left: 0;
+      width: 50%;
+      background-color: $main-color;
+      padding: 0;
+      z-index: 100;
+      opacity: 0.9;
+
+
+      li {
+        list-style: none;    
+        padding: 1rem;
+
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+          font-family: 'Circular-book', sans-serif;
+          font-size: $font-size-nav;
+
+          &:hover {
+            color: #ffffff;
+          }
+
+          &.active {
+            color: #ffffff;
+            font-family: 'Circular-bold', sans-serif;
+          }
+        }
+      }
+
+      &.open {
+        display: flex;
       }
     }
   }
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: $secondary-color;
-  z-index: 101;
-}
-
-// === SOLO agregamos esto para mobile ===
-@include mixin.respond-to(small) {
-
-  .nav-left,
-  .nav-right {
-    display: none;
-    flex-direction: column;
-    background: $bkg-color;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-
-    &.active {
-      display: flex;
-    }
-
-    li {
-      padding: 0.5rem 0;
-    }
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-
-
-
 .slider-css {
+  padding-top: $header-height-desktop;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
+   @media (max-width: 768px) {
+      padding-top: $header-height-mobile;
+
+   }
 
   .slides {
     display: flex;
+    width: 100%; // importante: no pongas 500vw a mano
+    height: 100%;
     transition: transform 0.5s ease-in-out;
-    width: 100%; // Esto ya no necesita ser 500%, lo maneja `transform`
+  }
 
-    .slide {
-      min-width: 100%;
+  .slide {
+    width: 100%;
+height: calc(100vh - #{$header-height-desktop});
+    position: relative;
+    flex-shrink: 0;
+       @media (max-width: 768px) {
+        height: calc(100vh - #{$header-height-mobile});
+
+       }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    img {
+      width: 100vw;
       height: 100vh;
-      position: relative;
-      flex-shrink: 0;
+      object-fit: cover;
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .text {
+      position: absolute;
+      bottom: 4rem;
+      left: 2rem;
+      color: white;
+      max-width: 800px;
+      z-index: 2;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        max-width: 300px;
+        align-items: flex-end;
+        gap: 0.5rem;
+        bottom: 1rem;
+        right: 5rem;
+
+
       }
 
-      .text {
-        position: absolute;
-        bottom: 4rem;
-        left: 2rem;
-        color: white;
-        max-width: 800px;
-        z-index: 2;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 2rem;
 
-        h1 {
-          max-width: 500px;
-          line-height: 0.9;
-          margin: 0;
+      h1 {
+        max-width: 500px;
+        line-height: 0.9;
+        margin: 0;
+
+        @media (max-width: 768px) {
+          font-size: $font-size-h1-mobile;
+          line-height: $line-height-h1-mobile;
+          text-align: right;
         }
       }
     }
   }
 
-  .navigation {
-    position: absolute;
-    top: 63%;
-    right: 0;
-    transform: translateY(-50%);
+.navigation {
+  position: absolute;
+  top: $header-height-desktop; // o 60px si no usás la variable
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // centra todo verticalmente
+  align-items: center;
+  pointer-events: none; // bloquea clics globalmente
+  height: 100%;
+
+  .brand {
+    margin-bottom: 2.5rem;
+    transform: rotate(270deg);
+    color: white;
+    font-family: 'Circular-book', sans-serif;
+    font-size: 10px;
+    white-space: nowrap;
+    pointer-events: none; // no necesita clics
+  }
+
+  .linea {
+    width: 1px;
+    background-color: white;
+    height: 180px;
+    margin: 0.5rem 0;
+    pointer-events: none; // solo decorativo
+  }
+
+  .numeration {
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 65%;
-    z-index: 2;
+    gap: 0.5rem;
+    pointer-events: auto; // ← Habilita los clics SOLO en esta parte
 
-    .brand {
-      transform: rotate(270deg);
-      color: #fff;
+    label {
       font-family: 'Circular-book', sans-serif;
-      font-size: 10px;
-      white-space: nowrap;
-    }
+      font-size: 13px;
+      color: white;
+      cursor: pointer;
 
-    .linea {
-      width: 1px;
-      background-color: white;
-      margin: 1rem 0;
-      height: 220px;
-    }
+      @media (max-width: 768px) {
+        font-size: $font-size-small-mobile;
+      }
 
-    .numeration {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      label {
-        font-family: 'Circular-book', sans-serif;
-        font-size: 13px;
-        color: white;
-        cursor: pointer;
-
-        &.active {
-          font-family: 'Circular-bold', sans-serif;
-          color: red;
-        }
+      &.active {
+        font-family: 'Circular-bold', sans-serif;
+        color: red;
       }
     }
   }
+}
+
+
+
+
 }
 
 .text-section {
@@ -268,10 +354,22 @@ body {
   margin: 80px auto;
   padding: 4rem 0;
 
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
   p {
 
     padding: 0;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: $font-size-base-mobile;
+      line-height: $line-height-base-mobile;
+    }
+
+
   }
 }
 
@@ -284,13 +382,18 @@ body {
   .work-container {
     padding: 4rem 2rem;
 
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+
+    }
+
     .work-image-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-
       gap: 1rem;
+      padding: 1.5rem 0;
 
       .work-card-container {
         position: relative;
@@ -307,6 +410,12 @@ body {
           object-position: center;
           aspect-ratio: 1 / 1;
           object-fit: cover;
+          filter: grayscale(100%);
+          transition: filter 0.4s ease;
+
+          &:hover {
+            filter: grayscale(0%);
+          }
 
         }
 
@@ -330,8 +439,37 @@ body {
           }
         }
       }
+
+      @media (max-width: 768px) {
+
+
+        flex-wrap: nowrap; // 🔑 Cambia a fila horizontal
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+        padding: 1rem 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: 100%;
+        touch-action: pan-x; // permite swipe horizontal
+
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .work-card-container {
+          min-width: 300px;
+          scroll-snap-align: start;
+          aspect-ratio: 1 / 1;
+
+        }
+
+      }
     }
   }
+
 
 }
 
@@ -340,20 +478,47 @@ body {
 .clients {
   padding: 4rem 2rem;
 
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+.clients-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $secondary-color;
+  border-left: 1px solid $secondary-color;
+ 
 
-  .clients-image-container {
+  .client-cell {
+    width: 20%; // 5 por fila en desktop
+    aspect-ratio: 3 / 1; // proporcional, se puede ajustar
+    border-right: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2.5rem 0;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
 
-    img {
-      max-width: 180px;
-      max-height: 60px;
-      object-fit: contain;
+    @media (max-width: 768px) {
+      width: 33.3333%; // 3 por fila en mobile
+      padding: 0.5rem;
     }
+
+   img {
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
   }
+}
+
+
+
+
 }
 
 .contact-section {
@@ -368,8 +533,18 @@ body {
     margin: auto;
     padding: 2.5rem 0;
 
+    @media (max-width: 768px) {
+      padding: 0;
+
+    }
+
     h2 {
       padding-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        padding-bottom: 1rem;
+
+      }
     }
 
     label {
@@ -380,6 +555,11 @@ body {
       font-size: 1rem;
       padding-bottom: 1rem;
 
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+
+      }
+
       input,
       textarea {
         border: none;
@@ -389,26 +569,20 @@ body {
         font-family: 'Circular-book', sans-serif;
         font-size: 1rem;
         resize: none;
+
+        @media (max-width: 768px) {
+          font-size: $font-size-base-mobile;
+          height: 40px;
+          margin: 0.5rem 0;
+
+        }
       }
 
     }
 
-    button {
-      background: none;
-      font-family: 'Circular-black', sans-serif;
-      font-size: 20px;
-      color: $main-color;
-      cursor: pointer;
-      border: none;
-
-      img {
-        width: 18px;
-        transform: rotate(-180deg);
-        transition: transform 0.3s ease;
-        margin-left: 0.5rem;
-      }
-
-    }
+    .primary-button {
+@include mixin.primary-button(next);
+          font-family: 'Circular-bold', sans-serif;    }
 
     .contact-link {
       display: flex;
@@ -426,9 +600,42 @@ body {
 
         img {
           height: max-content;
+          display: inline;
+          margin: 0 0 0 1rem;
         }
       }
     }
+  }
+
+.popup {
+  display: none; // ✅ Tiene que estar esto
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    color: $main-color;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $main-color;
   }
 }
 
@@ -445,47 +652,143 @@ body {
       height: 100%;
       justify-content: center;
       padding: 0;
-    }
+
+      @media (max-width: 768px) {
+        padding: 2rem 1rem;
+      }
+
+      .work-nav {
+        width: 100%;
+
+        .button-links {
+          display: flex;
+          justify-content: space-between;
+          padding: 2rem 0;
+          cursor: pointer;
+
+          .work-button {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:hover {
+              color: $main-color;
+            }
 
 
+
+            .section-header {
+              margin-bottom: -6px;
+
+
+            }
+
+            a.link-with-arrow {
+  @include mixin.primary-button;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-base-mobile;
   }
 
-  .work-page-projects {
-    &.grey {
-      background: none;
-    }
+
+              .arrow-circle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5rem;
+
+                width: 24px; // ← el tamaño que quieras
+                height: 24px;
+
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px);
+                transition:
+                  opacity 0.4s ease,
+                  transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+                  visibility 0.4s ease;
 
 
-    .work-card-container {
-      &.on-page {
+                img {
+                  width: 100%;
+                  height: auto;
+                  transform: rotate(270deg);
+                }
+              }
 
-        overflow: visible;
+              &:hover {
 
-        .work-card-description {
-          display: flex;
-          flex-direction: column;
+                color: $main-color;
 
-          justify-content: left;
-          gap: 0;
+                .arrow-circle {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateY(0);
 
-          span {
-            line-height: 1.3;
-          }
-
-          .text {
-            font-family: 'Circular-bold', sans-serif;
-
-            color: $main-color;
-
+                  img {
+                    filter: none; // o un filter que use $main-color si el SVG no es editable
+                  }
+                }
+              }
+            }
           }
         }
       }
+    }
 
 
+  }
 
+.work-page-projects {
+  &.grey {
+    background: none;
+  }
 
+  .work-container {
+    .work-image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .work-card-container {
+        &.on-page {
+          overflow: visible;
+
+          .work-card-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 0;
+
+            span {
+              line-height: 1.3;
+            }
+
+            .text {
+              font-family: 'Circular-bold', sans-serif;
+              color: $main-color;
+                      @media (max-width: 768px) {
+                        font-size: $font-size-base-mobile;
+                      }
+            }
+            .line-2{
+              @media (max-width: 768px) {
+                        font-size: $font-size-base-mobile;
+                      }
+            }
+          }
+        }
+
+        // ✅ SOLO para mobile
+        @media (max-width: 768px) {
+          min-width: calc(50% - 0.5rem); // 2 tarjetas por fila
+          aspect-ratio: 1 / 1;       // cuadradas
+        }
+      }
     }
   }
+}
+
 }
 
 .detail-page-body {
@@ -493,6 +796,22 @@ body {
     height: 100vh;
     width: calc(100% - 4rem);
     margin: auto;
+    margin-top: 74px;
+    position: relative;
+    @media (max-width: 768px) {
+    width: calc(100% - 2rem);
+                      }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); // ajustá opacidad a gusto
+      z-index: 1;
+    }
 
     img {
       width: 100%;
@@ -504,18 +823,27 @@ body {
       .text {
 
         bottom: 2rem;
-        left: 4rem;
+        left: 2rem;
         position: absolute;
-         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        z-index: 2;
 
         h1 {
           font-size: 50px;
-    line-height: 1;
-    margin: 0;
+          line-height: 1;
+          margin: 0;
+
+          @media (max-width: 768px) {
+            font-size: $font-size-h1-detail-mobile;
+            line-height: $line-height-h1-mobile;
+          }
         }
 
         .number {
           color: #ffffff;
+            @media (max-width: 768px) {
+            font-size: $font-size-base;
+      
+          }
 
         }
       }
@@ -527,14 +855,28 @@ body {
     max-width: calc(100% - 12rem);
     display: flex;
     flex-direction: column;
+        @media (max-width: 768px) {
+          max-width: 100%;
+          padding: 2rem!important;
+        }
 
     .title {
       display: flex;
       flex-direction: row;
       margin: auto;
-      gap: 2rem;
+      gap: 2rem!important;
+      @media (max-width: 768px) {
+        padding-top: 3rem;
+        padding-bottom: 2rem !important;
+       
+      }
 
       .section-header {
+        h2{
+          @media (max-width: 768px) {
+            line-height: 1;
+          }
+        }
         .number {
           display: flex;
           flex-direction: row;
@@ -555,8 +897,9 @@ body {
 
             color: $main-color;
             text-align: left;
-            span{
-               font-family: 'Circular-black', sans-serif;
+
+            span {
+              font-family: 'Circular-black', sans-serif;
             }
           }
         }
@@ -574,6 +917,7 @@ body {
 
       h2 {
         margin: -22px 0 0 0;
+        line-height: 1;
       }
 
       .title {
@@ -644,27 +988,29 @@ body {
     transform: translateY(-50%);
 
 
-    .nav-button {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: $main-color;
-      font-size: 16px;
+   .nav-button {
+    align-items: center;
+  
 
-      img {
-        width: 24px;
-      }
+ 
+  &.prev{
+    @include mixin.primary-button(prev);
+              font-family: 'Circular-bold', sans-serif;
 
-      &.next {
-        flex-direction: row-reverse;
 
-        img {
-          transform: rotate(180deg);
 
-        }
-      }
+  }
+
+  &.next {
+@include mixin.primary-button(next);
+          font-family: 'Circular-bold', sans-serif;
+
+    img {
+      transform: rotate(180deg);
     }
+  }
+}
+
   }
 }
 
@@ -722,15 +1068,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
 footer {
   background: $main-color;
   display: flex;
@@ -756,22 +1093,21 @@ footer {
       letter-spacing: 0;
     }
   }
-}
 
-@include mixin.respond-to(small) {
-  .main-nav {
-    flex-direction: column;
-    height: auto;
-    align-items: flex-start;
-  }
+  @include mixin.respond-to(small) {
+    padding: 1.5rem 0;
 
-  .work-image-container,
-  .clients-image-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .footer-content {
+      img {
+        max-width: 80px;
+      }
 
-  .logo img {
-    width: 80px;
+      p {
+        font-size: 1px;
+        text-align: center;
+        padding: 0 1rem; // espaciado horizontal
+      }
+    }
+
   }
 }

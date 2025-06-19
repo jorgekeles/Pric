@@ -4,16 +4,12 @@
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint ==small {
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       @content;
     }
   }
 
-  @else if $breakpoint ==medium {
-    @media (max-width: 900px) {
-      @content;
-    }
-  }
+ 
 
   @else if $breakpoint ==large {
     @media (max-width: 1200px) {
@@ -56,6 +52,13 @@
     background-color: white;
     height: 1px;
   }
+  @include respond-to(small){
+  .description-text{
+
+      display: none;
+    }
+    
+  }
 
   p {
     color: #ffffff;
@@ -70,7 +73,7 @@
     span {
       font-family: 'Circular-bold', sans-serif;
       color: #ffffff;
-      font-family: 'Circular-book', sans-serif;
+
       font-size: 13px;
 
     }
@@ -80,3 +83,154 @@
     color: #ffffff;
   }
 }
+
+@mixin arrow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: none;
+  border: none;
+  font-family: 'Circular-black', sans-serif;
+  font-size: 20px;
+  color: $main-color;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none; // permite uso en <a> también
+
+  span {
+    color: $main-color;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .arrow-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-color;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: background-color 0.3s ease;
+
+    img {
+      width: 22px;
+      transform: rotate(180deg);
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  // Animación de la flecha solo en hover del contenedor completo (no solo en img:hover)
+  &:hover .arrow-circle img {
+    transform: rotate(180deg) translateX(3px);
+  }
+}
+
+@mixin primary-button($direction: null) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $secondary-color;
+  font-family: 'Circular-book', sans-serif;
+  font-size: $font-size-base;
+  gap: 0.5rem;
+  position: relative;
+  background: none;
+  border: none;
+
+  @if $direction == prev or $direction == next {
+    flex-direction: row;
+     
+
+  } @else {
+    flex-direction: column;
+          
+
+  }
+
+  // Ocultar el texto solo en mobile para prev/next
+  span:not(.arrow-circle) {
+    @media (max-width: 768px) {
+      @if $direction == prev or $direction == next {
+        display: none;
+      }
+    }
+  }
+
+  .arrow-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    // ✅ Corrección: animación horizontal según dirección
+    @if $direction == prev {
+      transform: translateX(-10px); // entra desde la izquierda
+    } @else if $direction == next {
+      transform: translateX(10px); // entra desde la derecha
+    } @else {
+      transform: translateY(-10px); // animación vertical para otros
+    }
+
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      visibility 0.4s ease;
+
+    img {
+      width: 100%;
+      height: auto;
+
+      // ✅ Corrección: dirección de la flecha
+      transform: rotate(
+        if($direction == next, 180deg, 0deg)
+      );
+    }
+
+    // En mobile: flecha fija, texto oculto
+    @media (max-width: 768px) {
+      @if $direction == prev or $direction == next {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        margin-top: 0;
+      }
+    }
+  }
+
+  &:hover {
+    color: $main-color;
+
+    .arrow-circle {
+      opacity: 1;
+      visibility: visible;
+
+      @if $direction == prev or $direction == next {
+        transform: translateX(0);
+      } @else {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: $font-size-base-mobile;
+  }
+}
+
+
+
+
+
+

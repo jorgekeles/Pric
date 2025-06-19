@@ -21,30 +21,51 @@ document.addEventListener("DOMContentLoaded", () => {
       const primeraLinea = lineas[0];
       const otrasLineas = lineas.slice(1);
 
-    const descripcionHTML = `
+      const descripcionHTML = `
   <div class="text-description">
     <p class="intro">${primeraLinea}</p>
     ${otrasLineas.map(line => {
-      if (line.startsWith("- ")) {
-        // Lista con cuadradito
-        return `<p><span class="square"></span>${line.slice(2)}</p>`;
-      } else if (line.includes(":")) {
-        // Líneas que contienen ':' sin cuadradito pero con estilo especial
-        return `<p class="with-colon">${line}</p>`;
-      } else {
-        // Párrafos normales
-        return `<p>${line}</p>`;
-      }
-    }).join("")}
+        if (line.startsWith("- ")) {
+          // Lista con cuadradito
+          return `<p><span class="square"></span>${line.slice(2)}</p>`;
+        } else if (line.includes(":")) {
+          // Líneas que contienen ':' sin cuadradito pero con estilo especial
+          return `<p class="with-colon">${line}</p>`;
+        } else {
+          // Párrafos normales
+          return `<p>${line}</p>`;
+        }
+      }).join("")}
+  </div>
+`;
+      const navButtonsHTML = `
+  <div class="project-nav">
+    ${anterior ? `
+      <a href="project.html?id=${anterior.id}" class="nav-button prev">
+      <span class="arrow-circle">
+        <img src="img/icons/arrow.svg" alt="anterior" />
+      </span>
+      
+        anterior
+                              <span class="square"></span>
+
+      </a>` : ""
+        }
+
+    ${siguiente ? `
+      <a href="project.html?id=${siguiente.id}" class="nav-button next">
+                      <span class="square"></span>
+
+      siguiente
+      <span class="arrow-circle">
+        <img src="img/icons/arrow.svg" alt="siguiente" />
+      </span>
+        
+      </a>` : ""
+        }
   </div>
 `;
 
-      const navButtonsHTML = `
-        <div class="project-nav">
-          ${anterior ? `<a href="project.html?id=${anterior.id}" class="nav-button prev"><img src="img/icons/arrow.svg" alt="anterior" /></a>` : ""}
-          ${siguiente ? `<a href="project.html?id=${siguiente.id}" class="nav-button next"><img src="img/icons/arrow.svg" alt="siguiente" /></a>` : ""}
-        </div>
-      `;
 
       main.innerHTML = `
         <div class="detail-main-image project">
@@ -96,45 +117,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
       `;
       setTimeout(() => {
-  const overlay = document.getElementById("lightbox-overlay");
-const overlayImg = overlay.querySelector(".gallery-img");
-  const nextBtn = document.getElementById("lightbox-next");
-  const prevBtn = document.getElementById("lightbox-prev");
+        const overlay = document.getElementById("lightbox-overlay");
+        const overlayImg = overlay.querySelector(".gallery-img");
+        const nextBtn = document.getElementById("lightbox-next");
+        const prevBtn = document.getElementById("lightbox-prev");
 
-  const images = Array.from(document.querySelectorAll(".gallery-image"));
-  let currentIndex = 0;
+        const images = Array.from(document.querySelectorAll(".gallery-image"));
+        let currentIndex = 0;
 
-  function showImage(index) {
-    if (index >= 0 && index < images.length) {
-      overlayImg.src = images[index].src;
-      currentIndex = index;
-    }
-  }
+        function showImage(index) {
+          if (index >= 0 && index < images.length) {
+            overlayImg.src = images[index].src;
+            currentIndex = index;
+          }
+        }
 
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => {
-      overlay.style.display = "flex";
-      showImage(index);
-    });
-  });
+        images.forEach((img, index) => {
+          img.addEventListener("click", () => {
+            overlay.style.display = "flex";
+            showImage(index);
+          });
+        });
 
-  nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const nextIndex = (currentIndex + 1) % images.length;
-    showImage(nextIndex);
-  });
+        nextBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const nextIndex = (currentIndex + 1) % images.length;
+          showImage(nextIndex);
+        });
 
-  prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(prevIndex);
-  });
+        prevBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const prevIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(prevIndex);
+        });
 
-  overlay.addEventListener("click", () => {
-    overlay.style.display = "none";
-    overlayImg.src = "";
-  });
-});
+        overlay.addEventListener("click", () => {
+          overlay.style.display = "none";
+          overlayImg.src = "";
+        });
+      });
 
     });
 });
