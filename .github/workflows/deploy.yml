@@ -21,6 +21,6 @@ jobs:
         REMOTE_USER: ${{ secrets.FTP_USERNAME }}
         REMOTE_PORT: 65002
         SOURCE: "./"
-        TARGET: "public_html/"
+        TARGET: "/home/u988389204/domains/pricconstrucciones.com.ar/public_html"
         ARGS: "--delete"
 
