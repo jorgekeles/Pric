@@ -316,19 +316,38 @@
   </script>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const links = document.querySelectorAll("nav a");
-      const currentUrl = window.location.pathname.split("/").pop(); // Ej: index.html
+  document.addEventListener("DOMContentLoaded", () => {
+    // Marcar el link activo
+    const links = document.querySelectorAll("nav a");
+    const currentUrl = window.location.pathname.split("/").pop(); // Ej: index.html
 
-      links.forEach(link => {
-        const linkHref = link.getAttribute("href");
-
-        if (linkHref === currentUrl || (currentUrl === "" && linkHref === "index.html")) {
-          link.classList.add("active");
-        }
-      });
+    links.forEach(link => {
+      const linkHref = link.getAttribute("href");
+      if (linkHref === currentUrl || (currentUrl === "" && linkHref === "index.html")) {
+        link.classList.add("active");
+      }
     });
-  </script>
+
+    // Menú mobile toggle
+    const toggle = document.querySelector(".menu-toggle");
+    const navMobile = document.querySelector(".nav-mobile");
+
+    if (toggle && navMobile) {
+      toggle.addEventListener("click", () => {
+        navMobile.classList.toggle("open");
+      });
+
+      // Cerrar menú al hacer clic en un link
+      const navLinks = navMobile.querySelectorAll("a");
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navMobile.classList.remove("open");
+        });
+      });
+    }
+  });
+</script>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const slides = document.querySelector(".slides");
