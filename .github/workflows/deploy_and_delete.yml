@@ -1,0 +1,49 @@
+name: 🚀 Clean & Deploy Static Website to Hostinger via SFTP
+
+on:
+  workflow_dispatch:
+    inputs:
+      delete_before_deploy:
+        description: 'Delete public_html/ before deploy?'
+        required: false
+        default: 'true'
+      run_deploy:
+        description: 'Run deploy step?'
+        required: false
+        default: 'true'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Show current branch
+        run: 'echo Branch\: ${{ github.ref }}'
+
+      
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🧹 Delete public_html if requested and on main
+        if: github.ref == 'refs/heads/main' && github.event.inputs.delete_before_deploy == 'true'
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 65002
+          script: |
+            echo "Deleting remote ~/public_html directory..."
+            rm -rf ~/public_html
+
+      - name: 📦 Deploy via SFTP if requested and on main
+        if: github.ref == 'refs/heads/main' && github.event.inputs.run_deploy == 'true'
+        uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.FTP_HOST }}
+          REMOTE_USER: ${{ secrets.FTP_USERNAME }}
+          REMOTE_PORT: 65002
+          SOURCE: "./"
+          TARGET: "public_html/"
