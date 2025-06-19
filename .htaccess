@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Ruta limpia "/home" carga "index.html"
+RewriteRule ^home/?$ index.html [L]
+
+# Ruta limpia "/trabajos" carga "works.html"
+RewriteRule ^trabajos/?$ works.html [L]
+
