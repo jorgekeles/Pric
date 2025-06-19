@@ -36,29 +36,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function setupMobileNav() {
   const toggle = document.querySelector(".menu-toggle");
-  const navLeft = document.querySelector(".nav-left");
-  const navRight = document.querySelector(".nav-right");
+  const navMobile = document.querySelector(".nav-mobile");
 
   toggle.addEventListener("click", () => {
-    const isActive = navLeft.classList.contains("active");
+    const isActive = navMobile.classList.contains("open");
 
     // Toggle visibilidad
-    navLeft.classList.toggle("active");
-    navRight.classList.toggle("active");
+    navMobile.classList.toggle("open");
 
     // Cambiar ícono
     toggle.textContent = isActive ? "☰" : "✕";
   });
 
   // Cerrar menú al hacer clic en un link
-  const navLinks = document.querySelectorAll(".nav-left a, .nav-right a");
+  const navLinks = document.querySelectorAll(".nav-mobile a");
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
-      navLeft.classList.remove("active");
-      navRight.classList.remove("active");
+      navMobile.classList.remove("open");
       toggle.textContent = "☰";
     });
   });
 }
+
 
 });
