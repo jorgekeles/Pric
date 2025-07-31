@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .section-header {
@@ -29,10 +30,12 @@ body {
   background-color: $bkg-color;
   margin: 0;
   padding: 0;
+    -webkit-overflow-scrolling: touch;
 
   @media (max-width: 768px) {
     font-size: $font-size-base-mobile;
     line-height: $line-height-base-mobile;
+      -webkit-overflow-scrolling: touch;
   }
 
 

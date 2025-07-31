@@ -40,6 +40,7 @@
 }
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .section-header {
@@ -130,11 +131,13 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  -webkit-overflow-scrolling: touch;
 }
 @media (max-width: 768px) {
   body {
     font-size: 16px;
     line-height: 1.7;
+    -webkit-overflow-scrolling: touch;
   }
 }
 body h1 {
