@@ -763,13 +763,6 @@ body {
         .work-card-container {
           &.on-page {
             overflow: visible;
-             a {
-  display: block;
-  touch-action: pan-y; /* Permite scroll vertical dentro del enlace */
-  -webkit-user-select: none;
-  user-select: none;
-  touch-action: manipulation;
-}
 
             .work-card-description {
               display: flex;
@@ -802,8 +795,8 @@ body {
           @media (max-width: 768px) {
             min-width: calc(50% - 0.5rem); // 2 tarjetas por fila
             aspect-ratio: 1 / 1; // cuadradas
-              -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
+             filter: grayscale(100%) !important;
+    pointer-events: none;
           }
         }
       }

@@ -853,14 +853,6 @@ body a {
 .work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page {
   overflow: visible;
 }
-.work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page a {
-  display: block;
-  touch-action: pan-y; /* Permite scroll vertical dentro del enlace */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
-  touch-action: manipulation;
-}
 .work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page .work-card-description {
   display: flex;
   flex-direction: column;
@@ -888,8 +880,8 @@ body a {
   .work-page-body .work-page-projects .work-container .work-image-container .work-card-container {
     min-width: calc(50% - 0.5rem);
     aspect-ratio: 1/1;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    filter: grayscale(100%) !important;
+    pointer-events: none;
   }
 }
 
