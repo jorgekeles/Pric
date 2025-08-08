@@ -402,50 +402,29 @@ body {
       gap: 1rem;
       padding: 1.5rem 0;
 
-      .work-card-container {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-        width: calc(33.333% - 1.5rem);
-        cursor: pointer;
+.work-card-container {
+  position: relative;
+  width: calc(33.333% - 1.5rem);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: pan-y; // ✅ permite mover verticalmente
 
-        img {
-          width: 100%;
-          height: auto;
-          -o-object-position: center;
-          object-position: center;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-          filter: grayscale(100%);
-          transition: filter 0.4s ease;
+  img {
+    width: 100%;
+    height: auto;
+    -o-object-position: center;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
 
-          &:hover {
-            filter: grayscale(0%);
-          }
-
-        }
-
-        .card-header {
-          position: absolute;
-          top: 47%;
-          left: 0;
-          z-index: 5;
-          width: 100%;
-          height: 100%;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-
-          .number {
-            color: #ffffff;
-          }
-
-          .square {
-            margin: 0 0.3rem;
-          }
-        }
-      }
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
 
       @media (max-width: 768px) {
 

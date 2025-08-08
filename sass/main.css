@@ -469,11 +469,11 @@ body a {
 }
 .work .work-container .work-image-container .work-card-container {
   position: relative;
-  width: 100%;
+  width: calc(33.333% - 1.5rem);
   aspect-ratio: 1/1;
   overflow: hidden;
-  width: calc(33.333% - 1.5rem);
   cursor: pointer;
+  touch-action: pan-y;
 }
 .work .work-container .work-image-container .work-card-container img {
   width: 100%;
@@ -488,23 +488,6 @@ body a {
 }
 .work .work-container .work-image-container .work-card-container img:hover {
   filter: grayscale(0%);
-}
-.work .work-container .work-image-container .work-card-container .card-header {
-  position: absolute;
-  top: 47%;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.work .work-container .work-image-container .work-card-container .card-header .number {
-  color: #ffffff;
-}
-.work .work-container .work-image-container .work-card-container .card-header .square {
-  margin: 0 0.3rem;
 }
 @media (max-width: 768px) {
   .work .work-container .work-image-container {
