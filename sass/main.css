@@ -39,10 +39,8 @@
   font-style: normal;
 }
 html {
-  scroll-behavior: smooth; /* desplazamiento suave */
-  -webkit-overflow-scrolling: touch; /* momentum scroll en iOS */
-  touch-action: pan-y; /* permitir scroll vertical por defecto */
-  -ms-touch-action: pan-y; /* compatibilidad IE/Edge antiguos */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .section-header {
@@ -471,11 +469,11 @@ body a {
 }
 .work .work-container .work-image-container .work-card-container {
   position: relative;
-  width: calc(33.333% - 1.5rem);
+  width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  width: calc(33.333% - 1.5rem);
   cursor: pointer;
-  touch-action: pan-y;
 }
 .work .work-container .work-image-container .work-card-container img {
   width: 100%;
@@ -490,6 +488,23 @@ body a {
 }
 .work .work-container .work-image-container .work-card-container img:hover {
   filter: grayscale(0%);
+}
+.work .work-container .work-image-container .work-card-container .card-header {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.work .work-container .work-image-container .work-card-container .card-header .number {
+  color: #ffffff;
+}
+.work .work-container .work-image-container .work-card-container .card-header .square {
+  margin: 0 0.3rem;
 }
 @media (max-width: 768px) {
   .work .work-container .work-image-container {
@@ -834,15 +849,17 @@ body a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* 🛠 Fix para mobile: permitir scroll vertical sin bloqueo */
-  touch-action: pan-y;
-  -webkit-overflow-scrolling: touch;
-}
-.work-page-body .work-page-projects .work-container .work-image-container .work-card-container {
-  /* 🛠 Evitar que imágenes intercepten el gesto */
 }
 .work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page {
   overflow: visible;
+}
+.work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page a {
+  display: block;
+  touch-action: pan-y; /* Permite scroll vertical dentro del enlace */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  touch-action: manipulation;
 }
 .work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page .work-card-description {
   display: flex;
@@ -871,15 +888,9 @@ body a {
   .work-page-body .work-page-projects .work-container .work-image-container .work-card-container {
     min-width: calc(50% - 0.5rem);
     aspect-ratio: 1/1;
-    touch-action: pan-y; /* permitir scroll vertical */
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
-}
-.work-page-body .work-page-projects .work-container .work-image-container .work-card-container img {
-  touch-action: pan-y;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 .detail-page-body .detail-main-image {
@@ -1301,19 +1312,4 @@ footer .footer-content p {
     text-align: center;
     padding: 0 1rem;
   }
-}
-
-.work-image-container.is-vertical-scrolling a {
-  pointer-events: none !important;
-}
-
-/* asegurar momentum en iOS y overscroll chaining */
-.work-image-container {
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: auto; /* permitir que el scroll encadene hacia el body */
-}
-
-/* opcional: un padding extra abajo para que el dedo no quede justo sobre el footer */
-main {
-  padding-bottom: 56px;
 }/*# sourceMappingURL=main.css.map */
