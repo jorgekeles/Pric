@@ -39,8 +39,10 @@
   font-style: normal;
 }
 html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; /* desplazamiento suave */
+  -webkit-overflow-scrolling: touch; /* momentum scroll en iOS */
+  touch-action: pan-y; /* permitir scroll vertical por defecto */
+  -ms-touch-action: pan-y; /* compatibilidad IE/Edge antiguos */
 }
 
 .section-header {
@@ -832,6 +834,12 @@ body a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  /* 🛠 Fix para mobile: permitir scroll vertical sin bloqueo */
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+.work-page-body .work-page-projects .work-container .work-image-container .work-card-container {
+  /* 🛠 Evitar que imágenes intercepten el gesto */
 }
 .work-page-body .work-page-projects .work-container .work-image-container .work-card-container.on-page {
   overflow: visible;
@@ -863,7 +871,15 @@ body a {
   .work-page-body .work-page-projects .work-container .work-image-container .work-card-container {
     min-width: calc(50% - 0.5rem);
     aspect-ratio: 1/1;
+    touch-action: pan-y; /* permitir scroll vertical */
   }
+}
+.work-page-body .work-page-projects .work-container .work-image-container .work-card-container img {
+  touch-action: pan-y;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .detail-page-body .detail-main-image {
