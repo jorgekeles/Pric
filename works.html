@@ -458,6 +458,60 @@
       });
     });
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const containers = document.querySelectorAll('.work-image-container');
+
+  containers.forEach(container => {
+    let startX = 0, startY = 0, moved = false;
+
+    // capturamos anchors dentro del contenedor
+    const anchors = Array.from(container.querySelectorAll('a'));
+
+    container.addEventListener('touchstart', function (e) {
+      const t = e.touches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+      moved = false;
+    }, { passive: true });
+
+    container.addEventListener('touchmove', function (e) {
+      const t = e.touches[0];
+      const dx = Math.abs(t.clientX - startX);
+      const dy = Math.abs(t.clientY - startY);
+
+      if (dx > 5 || dy > 5) moved = true;
+
+      // si detectamos desplazamiento mayormente vertical -> desactivar links temporalmente
+      if (dy > dx && dy > 8) {
+        if (!container.classList.contains('is-vertical-scrolling')) {
+          container.classList.add('is-vertical-scrolling');
+          // también como fallback, seteamos inline pointer-events
+          anchors.forEach(a => a.style.pointerEvents = 'none');
+        }
+      } else {
+        if (container.classList.contains('is-vertical-scrolling')) {
+          container.classList.remove('is-vertical-scrolling');
+          anchors.forEach(a => a.style.pointerEvents = '');
+        }
+      }
+    }, { passive: true });
+
+    container.addEventListener('touchend', function () {
+      container.classList.remove('is-vertical-scrolling');
+      anchors.forEach(a => a.style.pointerEvents = '');
+    }, { passive: true });
+
+    // evitar que un "tap" convertido en "drag" dispare el click
+    anchors.forEach(a => {
+      a.addEventListener('click', function (ev) {
+        if (moved) ev.preventDefault();
+      }, false);
+    });
+  });
+});
+</script>
+
 
   <script src="include-partials.js"></script>
 

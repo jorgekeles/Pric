@@ -1128,3 +1128,18 @@ footer {
 
   }
 }
+
+.work-image-container.is-vertical-scrolling a {
+  pointer-events: none !important;
+}
+
+/* asegurar momentum en iOS y overscroll chaining */
+.work-image-container {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: auto; /* permitir que el scroll encadene hacia el body */
+}
+
+/* opcional: un padding extra abajo para que el dedo no quede justo sobre el footer */
+main {
+  padding-bottom: 56px;
+}
