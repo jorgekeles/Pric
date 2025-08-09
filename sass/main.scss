@@ -755,21 +755,18 @@ body {
     }
 
     .work-container {
-      .work-image-container {
+      .obra-image-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.5rem;
 
         .obra-card-container {
-
-          
-    
         position: relative;
-        width: 100%;
+
         aspect-ratio: 1 / 1;
         overflow: hidden;
         width: calc(33.333% - 1.5rem);
-        cursor: pointer;
+
         
 
         img {
@@ -785,7 +782,7 @@ body {
           &:hover {
             filter: grayscale(0%);
                @media (max-width: 768px) {
-                filter: none;
+                filter: none!important;
                }
           }
 
@@ -845,7 +842,7 @@ body {
 
           // ✅ SOLO para mobile
           @media (max-width: 768px) {
-            min-width: calc(50% - 0.5rem); // 2 tarjetas por fila
+            min-width: calc(50% - 1rem); // 2 tarjetas por fila
             aspect-ratio: 1 / 1; // cuadradas
           
            
