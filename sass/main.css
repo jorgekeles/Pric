@@ -290,6 +290,12 @@ body a {
   color: #ffffff;
   font-family: "Circular-bold", sans-serif;
 }
+.main-nav .nav-container .nav-mobile li p {
+  color: #999595;
+  font-family: "Circular-book", sans-serif;
+  font-size: 15px;
+  line-height: 0.5;
+}
 .main-nav .nav-container .nav-mobile.open {
   display: flex;
 }
@@ -1340,8 +1346,6 @@ footer .footer-content p {
     max-width: 80px;
   }
   footer .footer-content p {
-    font-size: 1px;
-    text-align: center;
-    padding: 0 1rem;
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
