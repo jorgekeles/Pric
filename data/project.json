@@ -327,6 +327,28 @@
         ]
     },
     {
+        "id": "oficinas-rentadoras-cba",
+        "titulo": "Construcción de oficinas rentadoras",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto de Córdoba Capital",
+        "estado": "Finalizada",
+        "anio": "-",
+        "superficie": "-",
+        "descripcion": "Trabajos realizados:",
+        "portada": "img/cards/oficinas-rentadoras-cba.jpeg",
+        "imagenes": [
+            "img/detail/oficinas-rentadoras-cba-1.jpeg",
+            "img/detail/oficinas-rentadoras-cba-2.jpeg",
+            "img/detail/oficinas-rentadoras-cba-3.jpeg",
+            "img/detail/oficinas-rentadoras-cba-4.jpeg",
+            "img/detail/oficinas-rentadoras-cba-5.jpeg",
+            "img/detail/oficinas-rentadoras-cba-6.jpeg",
+            "img/detail/oficinas-rentadoras-cba-7.jpeg",
+            "img/detail/oficinas-rentadoras-cba-8.jpeg"
+        ]
+    },
+    {
         "id": "coworking-vibra",
         "titulo": "Coworking Vibra",
         "categoria": "civil comercial",
