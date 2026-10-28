@@ -327,6 +327,28 @@
         ]
     },
     {
+        "id": "oficinas-rentadoras-cba",
+        "titulo": "Construcción de oficinas rentadoras",
+        "categoria": "civil institucional",
+        "obra": "Civil Institucional Nueva",
+        "ubicacion": "Aeropuerto de Córdoba Capital",
+        "estado": "Finalizada",
+        "anio": "2026",
+        "superficie": "84 m2",
+"descripcion": "Trabajos realizados:\n\n- Relevamiento.\n- Construcción de estructura mediante perfilería de Steel Frame, tanto paredes interiores, exteriores y cubierta.\n- Techo de chapa con aislante, canaletas, cupertinas y zinguerias correspondientes.\n- Provisión e instalación de carpinterías de aluminio tipo moderna con vidrio tipo DVH.\n- Provisión e instalación de puerta automática antipanico con sensor de movimiento.\n- Instalación de equipo de refrigeración tipo piso/techo frio calor.\n- Construcción de paredes exteriores con sistema Steel Frame con perfilería, lana de vidrio, placas de OSB, placa cementicia en exterior y placas de durlock en interior.\n- Construcción de cielorraso de durlock tipo junta tomada con buña perimetral en interior.\n- Pulido y protección de piso existente tipo hormigón alisado con laca poliuretanica.\n- Proyecto y ejecución de instalación de tendido eléctrico, nuevo tablero seccional, instalación de luminaria nueva led y enchufes.\n- Cableado de redes débiles, fichas tipo RJ45 en puestos de escritorio, pantallas de información de vuelos y cámaras de seguridad.\n- Construcción de revestimiento de fachadas mediante cenefas inferiores y superiores con chapa lisa y en sector del medio chapa microperforada con pintura epoxi y sus correspondientes bastidores de sujeción.\n- Pintura de tabiquería y cielorraso interior nuevo con látex color blanco.\n- Construcción de veredas perimetrales y rampas de acceso mediante hormigón tipo peinado.\n- Provisión e instalación de cartelería y equipamiento tipo mostradores de atención al cliente, escritorios, gabinetes de guardado y sillas.",
+       "portada": "img/cards/oficinas-rentadoras-cba.jpeg",
+        "imagenes": [
+            "img/detail/oficinas-rentadoras-cba-1.jpeg",
+            "img/detail/oficinas-rentadoras-cba-2.jpeg",
+            "img/detail/oficinas-rentadoras-cba-3.jpeg",
+            "img/detail/oficinas-rentadoras-cba-4.jpeg",
+            "img/detail/oficinas-rentadoras-cba-5.jpeg",
+            "img/detail/oficinas-rentadoras-cba-6.jpeg",
+            "img/detail/oficinas-rentadoras-cba-7.jpeg",
+            "img/detail/oficinas-rentadoras-cba-8.jpeg"
+        ]
+    },
+    {
         "id": "coworking-vibra",
         "titulo": "Coworking Vibra",
         "categoria": "civil comercial",
